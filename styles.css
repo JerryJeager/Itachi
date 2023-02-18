@@ -101,16 +101,13 @@ body{
 }
 #hero{
     width: 100%;
-    /* height: 80vh; */
 }
 swiper-container {
     z-index: -9999;
     width: 100%;
     height: 100%;
 }
-
 swiper-slide {
-    /* z-index: -9999; */
     text-align: center;
     font-size: 18px;
     height: 400px;
@@ -118,17 +115,71 @@ swiper-slide {
     justify-content: center;
     align-items: center;
 }
-
 swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* z-index: -9999 */
 }
-/* swiper-pagination-bullet-active {
-    background-color: #fff;
+swiper-slide h3, h2{
+    color: hsl(0, 0%, 100%);
 }
-swiper-pagination-bullet {
-    background-color: rgba(255, 255, 255, 0.5);
-} */
+swiper-slide h3{
+    font-weight: 500;
+    font-size: .8rem;
+}
+swiper-slide h2{
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+button.normal{
+    background: none;
+    border: none;
+    font-size: .8rem;
+    outline: none;
+    color: #000;
+    letter-spacing: 2px;
+    padding: 1.5em;
+    background-color: hsl(0, 0%, 100%);
+    height: 50px;
+    width: 130px;
+    margin: 1.5rem auto;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.toonami, .shaman, .chainsawMan, .jerseys, .one-piece{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    padding: 20px;
+    color: hsl(0, 0%, 100%);
+    animation-name: slideUp;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.shaman{
+    animation-delay: 2500ms;
+}
+.chainsawMan{
+    animation-delay: 5000ms;
+}
+.jerseys{
+    animation-delay: 7500ms;
+}
+.one-piece{
+    animation-delay: 10000ms;
+}
+@keyframes slideUp{
+    0%{
+        transform: translate(-50%, -0%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
