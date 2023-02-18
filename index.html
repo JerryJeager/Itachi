@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itachi</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
     <script src="https://kit.fontawesome.com/d81b686056.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <section id="header">
         <div class="hamburger">
@@ -39,6 +43,29 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <section id="hero">
+        <swiper-container class="mySwiper" pagination="true"
+        pagination-dynamic-bullets="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <img src="images/homePageImg/Atsuko_Toonami_HeroBanner_FEB2023_2000x.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/homePageImg/Atsuko_ShamanKing_HeroBanner_FEB2023_2000x.gif" alt="">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/homePageImg/Atsuko_ChainsawmanRMSG_HeroBanner_FEB2023_2000x.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/homePageImg/Atsuko_JerseyPush_HeroBanner_DEC2022_2000x.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/homePageImg/Atsuko_OnePieceRed_HeroBanner_FEB2023_2000x.gif" alt="">
+            </swiper-slide>
+        </swiper-container>
+    </section>
+
+    <script src="script.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 </body>
+
 </html>
