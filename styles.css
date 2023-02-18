@@ -207,6 +207,7 @@ button.normal{
     width: auto;
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
     margin-top: 1.4rem;
     margin-left: 1.7rem;
     padding-bottom: 4rem;
@@ -228,4 +229,56 @@ button.normal{
     font-weight: 300;
     font-size: .9rem;
     letter-spacing: 1.5px;
+}
+
+/* shop new arrivals and banner */
+
+#shop-banner{
+    width: 90%;
+    margin: 2.3rem auto;
+}
+.new-arrivals-btn{
+    width: 180px;
+    margin: 1.2rem auto;
+}
+button.shop-new-arrivals{
+    background-color: #1b133c;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 60px;
+    padding: .8rem;
+    font-size: .7rem;
+}
+.banner1, .banner2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+.banner1 h3, .banner2 h3{
+    color: hsl(0, 0%, 100%);
+    margin-top: 100px;
+}
+.banner-img{
+    width: 100%;
+        height: 400px;
+}
+.tshirts{
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(images/homePageImg/NYCCBleach_square-11_1_750x960_crop_center.jpg) center/cover no-repeat;
+}
+.lounge{
+    margin-top: 1.2rem;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(images/homePageImg/AtsukoUnisexLoungeSets_square-3_750x960_crop_center.jpg) center/cover no-repeat;
+}
+.banner1 img, .banner2 img{
+    width: 100%;
+    height: 100%;
+}
+.fleece{
+    margin-top: 1.2rem;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(images/homePageImg/Crewnecks_square7_750x960_crop_center.jpg) center/cover no-repeat;
+}
+.accessories{
+    margin-top: 1.2rem;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(images/homePageImg/accessories_1000x.jpg) center/cover no-repeat;
 }
